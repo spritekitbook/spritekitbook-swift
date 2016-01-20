@@ -1,14 +1,14 @@
 //
-//  GameScene.swift
+//  GameOverScene.swift
 //  SpaceRunner
 //
 //  Created by Jeremy Novak on 1/19/16.
-//  Copyright (c) 2016 Jeremy Novak. All rights reserved.
+//  Copyright © 2016 Jeremy Novak. All rights reserved.
 //
 
 import SpriteKit
 
-class GameScene:SKScene {
+class GameOverScene:SKScene {
     
     // MARK: - Private class variables
     private var sceneLabel = SKLabelNode()
@@ -23,11 +23,11 @@ class GameScene:SKScene {
     }
     
     override func didMoveToView(view: SKView) {
-        self.setupGameScene()
+        self.setupGameOverScene()
     }
     
     // MARK: - Setup
-    private func setupGameScene() {
+    private func setupGameOverScene() {
         // Set the background color to Black
         self.backgroundColor = SKColor.blackColor()
         
@@ -35,7 +35,7 @@ class GameScene:SKScene {
         self.sceneLabel.fontName = "Chalkduster"
         self.sceneLabel.fontColor = SKColor.whiteColor()
         self.sceneLabel.fontSize = kViewSize.width * 0.1
-        self.sceneLabel.text = "Game Scene"
+        self.sceneLabel.text = "Game Over Scene"
         self.sceneLabel.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height / 2)
         
         self.addChild(self.sceneLabel)
@@ -52,18 +52,18 @@ class GameScene:SKScene {
         
         if self.sceneLabel.containsPoint(touchLocation) {
             if kDebug {
-                print("Game Scene: Loading Game Over Scene.")
+                print("GameOverScene: Loading Menu Scene.")
             }
             
-            self.loadGameOverScene()
+            self.loadMenuScene()
         }
     }
     
     // MARK: - Load Scene
-    private func loadGameOverScene() {
-        let gameOverScene = GameOverScene(size: kViewSize)
+    private func loadMenuScene() {
+        let menuScene = MenuScene(size: kViewSize)
         let transition = SKTransition.fadeWithColor(SKColor.blackColor(), duration: 0.25)
         
-        self.view?.presentScene(gameOverScene, transition: transition)
+        self.view?.presentScene(menuScene, transition: transition)
     }
 }

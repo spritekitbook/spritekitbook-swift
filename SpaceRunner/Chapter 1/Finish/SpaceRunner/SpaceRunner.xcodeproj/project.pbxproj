@@ -34,6 +34,9 @@
 		3F7083951C4F1C000051927B /* Pickup.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7083801C4F1C000051927B /* Pickup.caf */; };
 		3F7083961C4F1C000051927B /* ShieldDown.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7083811C4F1C000051927B /* ShieldDown.caf */; };
 		3F7083971C4F1C000051927B /* ShieldUp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F7083821C4F1C000051927B /* ShieldUp.caf */; };
+		3F70839C1C4F222F0051927B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70839B1C4F222F0051927B /* Constants.swift */; };
+		3F7083A01C4F2A800051927B /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70839F1C4F2A800051927B /* MenuScene.swift */; };
+		3F7083A21C4F2C4B0051927B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7083A11C4F2C4B0051927B /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		3F7083801C4F1C000051927B /* Pickup.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pickup.caf; sourceTree = "<group>"; };
 		3F7083811C4F1C000051927B /* ShieldDown.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShieldDown.caf; sourceTree = "<group>"; };
 		3F7083821C4F1C000051927B /* ShieldUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShieldUp.caf; sourceTree = "<group>"; };
+		3F70839B1C4F222F0051927B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F70839F1C4F2A800051927B /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		3F7083A11C4F2C4B0051927B /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 		3F7083611C4F1B5B0051927B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F70839A1C4F210E0051927B /* Constants */,
 				3F7083991C4F1CC60051927B /* Scenes */,
 				3F7083981C4F1C620051927B /* ViewController */,
 			);
@@ -252,9 +259,19 @@
 		3F7083991C4F1CC60051927B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3F70839F1C4F2A800051927B /* MenuScene.swift */,
 				3F7083631C4F1B5B0051927B /* GameScene.swift */,
+				3F7083A11C4F2C4B0051927B /* GameOverScene.swift */,
 			);
 			name = Scenes;
+			sourceTree = "<group>";
+		};
+		3F70839A1C4F210E0051927B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3F70839B1C4F222F0051927B /* Constants.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +421,8 @@
 				3F70838A1C4F1C000051927B /* SKAction+Extensions.swift in Sources */,
 				3F7083661C4F1B5B0051927B /* GameScene.swift in Sources */,
 				3F7083881C4F1C000051927B /* CGVector+Extensions.swift in Sources */,
+				3F7083A21C4F2C4B0051927B /* GameOverScene.swift in Sources */,
+				3F70839C1C4F222F0051927B /* Constants.swift in Sources */,
 				3F7083861C4F1C000051927B /* CGFloat+Extensions.swift in Sources */,
 				3F70838D1C4F1C000051927B /* SKNode+Extensions.swift in Sources */,
 				3F70838F1C4F1C000051927B /* SKTEffects.swift in Sources */,
@@ -411,6 +430,7 @@
 				3F7083891C4F1C000051927B /* Int+Extensions.swift in Sources */,
 				3F7083871C4F1C000051927B /* CGPoint+Extensions.swift in Sources */,
 				3F70838B1C4F1C000051927B /* SKAction+SpecialEffects.swift in Sources */,
+				3F7083A01C4F2A800051927B /* MenuScene.swift in Sources */,
 				3F7083911C4F1C000051927B /* Vector3.swift in Sources */,
 				3F7083651C4F1B5B0051927B /* AppDelegate.swift in Sources */,
 			);

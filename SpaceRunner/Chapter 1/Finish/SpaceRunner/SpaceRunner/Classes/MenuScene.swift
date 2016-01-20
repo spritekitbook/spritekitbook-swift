@@ -1,14 +1,14 @@
 //
-//  GameScene.swift
+//  MenuScene.swift
 //  SpaceRunner
 //
 //  Created by Jeremy Novak on 1/19/16.
-//  Copyright (c) 2016 Jeremy Novak. All rights reserved.
+//  Copyright © 2016 Jeremy Novak. All rights reserved.
 //
 
 import SpriteKit
 
-class GameScene:SKScene {
+class MenuScene:SKScene {
     
     // MARK: - Private class variables
     private var sceneLabel = SKLabelNode()
@@ -23,11 +23,11 @@ class GameScene:SKScene {
     }
     
     override func didMoveToView(view: SKView) {
-        self.setupGameScene()
+        self.setupMenuScene()
     }
     
     // MARK: - Setup
-    private func setupGameScene() {
+    private func setupMenuScene() {
         // Set the background color to Black
         self.backgroundColor = SKColor.blackColor()
         
@@ -35,7 +35,7 @@ class GameScene:SKScene {
         self.sceneLabel.fontName = "Chalkduster"
         self.sceneLabel.fontColor = SKColor.whiteColor()
         self.sceneLabel.fontSize = kViewSize.width * 0.1
-        self.sceneLabel.text = "Game Scene"
+        self.sceneLabel.text = "Menu Scene"
         self.sceneLabel.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height / 2)
         
         self.addChild(self.sceneLabel)
@@ -52,18 +52,18 @@ class GameScene:SKScene {
         
         if self.sceneLabel.containsPoint(touchLocation) {
             if kDebug {
-                print("Game Scene: Loading Game Over Scene.")
+                print("MenuScene: Loading Game Scene.")
             }
             
-            self.loadGameOverScene()
+            self.loadGameScene()
         }
     }
     
     // MARK: - Load Scene
-    private func loadGameOverScene() {
-        let gameOverScene = GameOverScene(size: kViewSize)
+    private func loadGameScene() {
+        let gameScene = GameScene(size: kViewSize)
         let transition = SKTransition.fadeWithColor(SKColor.blackColor(), duration: 0.25)
         
-        self.view?.presentScene(gameOverScene, transition: transition)
+        self.view?.presentScene(gameScene, transition: transition)
     }
 }
