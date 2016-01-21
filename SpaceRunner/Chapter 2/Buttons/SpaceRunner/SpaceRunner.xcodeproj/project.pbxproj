@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F7083321C4F14130051927B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F7083311C4F14130051927B /* GameScene.sks */; };
 		3F7083391C4F14130051927B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7083371C4F14130051927B /* Main.storyboard */; };
 		3F70833B1C4F14130051927B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F70833A1C4F14130051927B /* Assets.xcassets */; };
-		3F70833E1C4F14130051927B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F70833C1C4F14130051927B /* LaunchScreen.storyboard */; };
 		3F7083491C4F14130051927B /* SpaceRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7083481C4F14130051927B /* SpaceRunnerTests.swift */; };
 		3F7083541C4F14130051927B /* SpaceRunnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7083531C4F14130051927B /* SpaceRunnerUITests.swift */; };
 		3F7083651C4F1B5B0051927B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7083621C4F1B5B0051927B /* AppDelegate.swift */; };
@@ -45,6 +43,12 @@
 		3FFD279E1C50600C009798E6 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD279D1C50600C009798E6 /* PlayButton.swift */; };
 		3FFD27A01C5064A9009798E6 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD279F1C5064A9009798E6 /* StartButton.swift */; };
 		3FFD27A21C506615009798E6 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27A11C506615009798E6 /* RetryButton.swift */; };
+		3FFD27BB1C5076E3009798E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B51C5076E3009798E6 /* Default-568h@2x.png */; };
+		3FFD27BC1C5076E3009798E6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B61C5076E3009798E6 /* Default.png */; };
+		3FFD27BD1C5076E3009798E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B71C5076E3009798E6 /* Default@2x.png */; };
+		3FFD27BE1C5076E3009798E6 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B81C5076E3009798E6 /* Default@2x~ipad.png */; };
+		3FFD27BF1C5076E3009798E6 /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B91C5076E3009798E6 /* Default@3x.png */; };
+		3FFD27C01C5076E3009798E6 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27BA1C5076E3009798E6 /* Default~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +70,8 @@
 
 /* Begin PBXFileReference section */
 		3F70832C1C4F14130051927B /* SpaceRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F7083311C4F14130051927B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3F7083381C4F14130051927B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F70833A1C4F14130051927B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F70833D1C4F14130051927B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F70833F1C4F14130051927B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7083441C4F14130051927B /* SpaceRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7083481C4F14130051927B /* SpaceRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceRunnerTests.swift; sourceTree = "<group>"; };
@@ -109,6 +111,12 @@
 		3FFD279D1C50600C009798E6 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		3FFD279F1C5064A9009798E6 /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		3FFD27A11C506615009798E6 /* RetryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
+		3FFD27B51C5076E3009798E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FFD27B61C5076E3009798E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FFD27B71C5076E3009798E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FFD27B81C5076E3009798E6 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
+		3FFD27B91C5076E3009798E6 /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@3x.png"; sourceTree = "<group>"; };
+		3FFD27BA1C5076E3009798E6 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,12 +167,11 @@
 		3F70832E1C4F14130051927B /* SpaceRunner */ = {
 			isa = PBXGroup;
 			children = (
+				3FFD27B41C5076E3009798E6 /* Launch */,
 				3F7083681C4F1C000051927B /* GameResources */,
 				3F7083611C4F1B5B0051927B /* Classes */,
-				3F7083311C4F14130051927B /* GameScene.sks */,
 				3F7083371C4F14130051927B /* Main.storyboard */,
 				3F70833A1C4F14130051927B /* Assets.xcassets */,
-				3F70833C1C4F14130051927B /* LaunchScreen.storyboard */,
 				3F70833F1C4F14130051927B /* Info.plist */,
 			);
 			path = SpaceRunner;
@@ -322,6 +329,19 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
+		3FFD27B41C5076E3009798E6 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				3FFD27B51C5076E3009798E6 /* Default-568h@2x.png */,
+				3FFD27B61C5076E3009798E6 /* Default.png */,
+				3FFD27B71C5076E3009798E6 /* Default@2x.png */,
+				3FFD27B81C5076E3009798E6 /* Default@2x~ipad.png */,
+				3FFD27B91C5076E3009798E6 /* Default@3x.png */,
+				3FFD27BA1C5076E3009798E6 /* Default~ipad.png */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,17 +449,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7083321C4F14130051927B /* GameScene.sks in Resources */,
+				3FFD27BD1C5076E3009798E6 /* Default@2x.png in Resources */,
+				3FFD27C01C5076E3009798E6 /* Default~ipad.png in Resources */,
 				3F7083831C4F1C000051927B /* editundo.ttf in Resources */,
 				3F7083921C4F1C000051927B /* GameMusic.mp3 in Resources */,
-				3F70833E1C4F14130051927B /* LaunchScreen.storyboard in Resources */,
 				3F7083941C4F1C000051927B /* Explosion.caf in Resources */,
+				3FFD27BB1C5076E3009798E6 /* Default-568h@2x.png in Resources */,
 				3F7083971C4F1C000051927B /* ShieldUp.caf in Resources */,
+				3FFD27BE1C5076E3009798E6 /* Default@2x~ipad.png in Resources */,
 				3F70833B1C4F14130051927B /* Assets.xcassets in Resources */,
 				3F7083931C4F1C000051927B /* ButtonTap.caf in Resources */,
 				3F7083951C4F1C000051927B /* Pickup.caf in Resources */,
 				3F7083961C4F1C000051927B /* ShieldDown.caf in Resources */,
 				3F7083391C4F14130051927B /* Main.storyboard in Resources */,
+				3FFD27BC1C5076E3009798E6 /* Default.png in Resources */,
+				3FFD27BF1C5076E3009798E6 /* Default@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,14 +554,6 @@
 				3F7083381C4F14130051927B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F70833C1C4F14130051927B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F70833D1C4F14130051927B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

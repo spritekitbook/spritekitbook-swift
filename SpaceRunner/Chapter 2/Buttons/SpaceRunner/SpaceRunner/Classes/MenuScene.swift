@@ -15,7 +15,7 @@ class MenuScene:SKScene {
     private let playButton = PlayButton()
     
     // MARK: - Private class variables
-    //private var sceneLabel = SKLabelNode()
+    private var sceneLabel = SKLabelNode()
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
