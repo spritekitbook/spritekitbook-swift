@@ -49,6 +49,8 @@
 		3FFD27BE1C5076E3009798E6 /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B81C5076E3009798E6 /* Default@2x~ipad.png */; };
 		3FFD27BF1C5076E3009798E6 /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27B91C5076E3009798E6 /* Default@3x.png */; };
 		3FFD27C01C5076E3009798E6 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD27BA1C5076E3009798E6 /* Default~ipad.png */; };
+		3FFD280E1C507DAF009798E6 /* GameTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD280D1C507DAF009798E6 /* GameTitle.swift */; };
+		3FFD28101C507E93009798E6 /* GameTitleShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD280F1C507E93009798E6 /* GameTitleShip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		3FFD27B81C5076E3009798E6 /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
 		3FFD27B91C5076E3009798E6 /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@3x.png"; sourceTree = "<group>"; };
 		3FFD27BA1C5076E3009798E6 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		3FFD280D1C507DAF009798E6 /* GameTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTitle.swift; sourceTree = "<group>"; };
+		3FFD280F1C507E93009798E6 /* GameTitleShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTitleShip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 		3F7083611C4F1B5B0051927B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3FFD280C1C507CC4009798E6 /* Interface Nodes */,
 				3FFD279C1C505FF9009798E6 /* Buttons */,
 				3FFD27991C50528F009798E6 /* Background */,
 				3FFD27901C5031A7009798E6 /* Singletons */,
@@ -340,6 +345,15 @@
 				3FFD27BA1C5076E3009798E6 /* Default~ipad.png */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		3FFD280C1C507CC4009798E6 /* Interface Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				3FFD280D1C507DAF009798E6 /* GameTitle.swift */,
+				3FFD280F1C507E93009798E6 /* GameTitleShip.swift */,
+			);
+			name = "Interface Nodes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,8 +520,10 @@
 				3F70838D1C4F1C000051927B /* SKNode+Extensions.swift in Sources */,
 				3F70838F1C4F1C000051927B /* SKTEffects.swift in Sources */,
 				3F7083671C4F1B5B0051927B /* GameViewController.swift in Sources */,
+				3FFD28101C507E93009798E6 /* GameTitleShip.swift in Sources */,
 				3F7083891C4F1C000051927B /* Int+Extensions.swift in Sources */,
 				3F7083871C4F1C000051927B /* CGPoint+Extensions.swift in Sources */,
+				3FFD280E1C507DAF009798E6 /* GameTitle.swift in Sources */,
 				3F70838B1C4F1C000051927B /* SKAction+SpecialEffects.swift in Sources */,
 				3FFD27981C504662009798E6 /* Math.swift in Sources */,
 				3F7083A01C4F2A800051927B /* MenuScene.swift in Sources */,

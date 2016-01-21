@@ -13,6 +13,8 @@ class MenuScene:SKScene {
     // MARK: - Private class constants
     private let background = Background()
     private let playButton = PlayButton()
+    private let gameTitle = GameTitle()
+    private let gameTitleShip = GameTitleShip()
     
     // MARK: - Private class variables
     private var sceneLabel = SKLabelNode()
@@ -44,6 +46,9 @@ class MenuScene:SKScene {
 //        self.sceneLabel.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height / 2)
         
         self.addChild(self.playButton)
+        
+        self.addChild(self.gameTitle)
+        self.addChild(self.gameTitleShip)
     }
     
     // MARK: - Update
