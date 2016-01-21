@@ -1,20 +1,21 @@
 //
-//  GameScene.swift
+//  GameOverScene.swift
 //  SpaceRunner
 //
 //  Created by Jeremy Novak on 1/19/16.
-//  Copyright (c) 2016 Jeremy Novak. All rights reserved.
+//  Copyright © 2016 Jeremy Novak. All rights reserved.
 //
 
 import SpriteKit
 
-class GameScene:SKScene {
+class GameOverScene:SKScene {
     
     // MARK: - Private class constants
     private let background = Background()
+    private let retryButton = RetryButton()
     
     // MARK: - Private class variables
-    private var sceneLabel = SKLabelNode()
+    //private var sceneLabel = SKLabelNode()
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -26,23 +27,23 @@ class GameScene:SKScene {
     }
     
     override func didMoveToView(view: SKView) {
-        self.setupGameScene()
+        self.setupGameOverScene()
     }
     
     // MARK: - Setup
-    private func setupGameScene() {
+    private func setupGameOverScene() {
         // Set the background color to Colors.Background
         self.backgroundColor = Colors.colorFromRGB(rgbvalue: Colors.Background)
         self.addChild(self.background)
         
         // Initialize the temporary label and add it to the scene
-        self.sceneLabel.fontName = "Chalkduster"
-        self.sceneLabel.fontColor = SKColor.whiteColor()
-        self.sceneLabel.fontSize = kViewSize.width * 0.1
-        self.sceneLabel.text = "Game Scene"
-        self.sceneLabel.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height / 2)
+//        self.sceneLabel.fontName = "Chalkduster"
+//        self.sceneLabel.fontColor = SKColor.whiteColor()
+//        self.sceneLabel.fontSize = kViewSize.width * 0.1
+//        self.sceneLabel.text = "Game Over Scene"
+//        self.sceneLabel.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height / 2)
         
-        self.addChild(self.sceneLabel)
+        self.addChild(self.retryButton)
     }
     
     // MARK: - Update
@@ -54,20 +55,20 @@ class GameScene:SKScene {
         let touch:UITouch = touches.first! as UITouch
         let touchLocation = touch.locationInNode(self)
         
-        if self.sceneLabel.containsPoint(touchLocation) {
+        if self.retryButton.containsPoint(touchLocation) {
             if kDebug {
-                print("Game Scene: Loading Game Over Scene.")
+                print("GameOverScene: Loading Menu Scene.")
             }
             
-            self.loadGameOverScene()
+            self.loadMenuScene()
         }
     }
     
     // MARK: - Load Scene
-    private func loadGameOverScene() {
-        let gameOverScene = GameOverScene(size: kViewSize)
+    private func loadMenuScene() {
+        let menuScene = MenuScene(size: kViewSize)
         let transition = SKTransition.fadeWithColor(SKColor.blackColor(), duration: 0.25)
         
-        self.view?.presentScene(gameOverScene, transition: transition)
+        self.view?.presentScene(menuScene, transition: transition)
     }
 }

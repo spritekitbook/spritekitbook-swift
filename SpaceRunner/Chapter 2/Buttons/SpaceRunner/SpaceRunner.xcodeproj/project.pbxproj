@@ -42,6 +42,9 @@
 		3FFD27961C50417B009798E6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27951C50417B009798E6 /* Colors.swift */; };
 		3FFD27981C504662009798E6 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27971C504662009798E6 /* Math.swift */; };
 		3FFD279B1C505324009798E6 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD279A1C505324009798E6 /* Background.swift */; };
+		3FFD279E1C50600C009798E6 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD279D1C50600C009798E6 /* PlayButton.swift */; };
+		3FFD27A01C5064A9009798E6 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD279F1C5064A9009798E6 /* StartButton.swift */; };
+		3FFD27A21C506615009798E6 /* RetryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27A11C506615009798E6 /* RetryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,9 @@
 		3FFD27951C50417B009798E6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3FFD27971C504662009798E6 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		3FFD279A1C505324009798E6 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		3FFD279D1C50600C009798E6 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		3FFD279F1C5064A9009798E6 /* StartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		3FFD27A11C506615009798E6 /* RetryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 		3F7083611C4F1B5B0051927B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3FFD279C1C505FF9009798E6 /* Buttons */,
 				3FFD27991C50528F009798E6 /* Background */,
 				3FFD27901C5031A7009798E6 /* Singletons */,
 				3F70839A1C4F210E0051927B /* Constants */,
@@ -303,6 +310,16 @@
 				3FFD279A1C505324009798E6 /* Background.swift */,
 			);
 			name = Background;
+			sourceTree = "<group>";
+		};
+		3FFD279C1C505FF9009798E6 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3FFD279D1C50600C009798E6 /* PlayButton.swift */,
+				3FFD279F1C5064A9009798E6 /* StartButton.swift */,
+				3FFD27A11C506615009798E6 /* RetryButton.swift */,
+			);
+			name = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,10 +465,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F70838C1C4F1C000051927B /* SKColor+Extensions.swift in Sources */,
+				3FFD279E1C50600C009798E6 /* PlayButton.swift in Sources */,
+				3FFD27A21C506615009798E6 /* RetryButton.swift in Sources */,
 				3FFD27961C50417B009798E6 /* Colors.swift in Sources */,
 				3F7083901C4F1C000051927B /* SKTTimingFunctions.swift in Sources */,
 				3F70838A1C4F1C000051927B /* SKAction+Extensions.swift in Sources */,
 				3FFD27941C503F01009798E6 /* GameParticles.swift in Sources */,
+				3FFD27A01C5064A9009798E6 /* StartButton.swift in Sources */,
 				3F7083661C4F1B5B0051927B /* GameScene.swift in Sources */,
 				3F7083881C4F1C000051927B /* CGVector+Extensions.swift in Sources */,
 				3F7083A21C4F2C4B0051927B /* GameOverScene.swift in Sources */,

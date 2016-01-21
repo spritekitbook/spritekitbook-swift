@@ -24,9 +24,6 @@ class GameTextures {
     init() {
         self.interfaceSpritesAtlas = SKTextureAtlas(named: "InterfaceSprites")
         self.gameSpritesAtlas = SKTextureAtlas(named: "GameSprites")
-        
-        self.testWithName("Test")
-        self.testWithName2(name: "Test")
     }
     
     // MARK: - Public convenience functions
