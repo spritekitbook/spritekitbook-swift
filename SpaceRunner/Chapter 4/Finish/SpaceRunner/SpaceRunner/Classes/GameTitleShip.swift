@@ -1,5 +1,5 @@
 //
-//  StartButton.swift
+//  GameTitleShip.swift
 //  SpaceRunner
 //
 //  Created by Jeremy Novak on 1/20/16.
@@ -8,8 +8,10 @@
 
 import SpriteKit
 
-
-class StartButton:SKSpriteNode {
+class GameTitleShip:SKSpriteNode {
+    
+    // MARK: - Private class variables
+    private var animation = SKAction()
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -21,25 +23,15 @@ class StartButton:SKSpriteNode {
     }
     
     convenience init() {
-        let texture = GameTextures.sharedInstance.textureWithName(name: SpriteName.ButtonStart)
+        let texture = GameTextures.sharedInstance.textureWithName(name: SpriteName.TitleGameShip)
         self.init(texture: texture, color: SKColor.whiteColor(), size: texture.size())
         
-        self.setupStartButton()
+        self.setupGameTitleShip()
     }
     
     // MARK: - Setup
-    private func setupStartButton() {
-        self.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height * 0.3)
-    }
-    
-    // MARK: - Actions
-    func fadeStartButton() {
-        self.runAction(SKAction.fadeOutWithDuration(0.5)) { () -> Void in
-            self.removeFromParent()
-        }
-    }
-    
-    // MARK: - Actions
-    func tapped() {
+    private func setupGameTitleShip() {
+        // Offscreen lower left corner
+        self.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height / 2)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  StartButton.swift
+//  PlayButton.swift
 //  SpaceRunner
 //
 //  Created by Jeremy Novak on 1/20/16.
@@ -9,7 +9,7 @@
 import SpriteKit
 
 
-class StartButton:SKSpriteNode {
+class PlayButton:SKSpriteNode {
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -21,22 +21,15 @@ class StartButton:SKSpriteNode {
     }
     
     convenience init() {
-        let texture = GameTextures.sharedInstance.textureWithName(name: SpriteName.ButtonStart)
+        let texture = GameTextures.sharedInstance.textureWithName(name: SpriteName.ButtonPlay)
         self.init(texture: texture, color: SKColor.whiteColor(), size: texture.size())
         
-        self.setupStartButton()
+        self.setupPlayButton()
     }
     
     // MARK: - Setup
-    private func setupStartButton() {
+    private func setupPlayButton() {
         self.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height * 0.3)
-    }
-    
-    // MARK: - Actions
-    func fadeStartButton() {
-        self.runAction(SKAction.fadeOutWithDuration(0.5)) { () -> Void in
-            self.removeFromParent()
-        }
     }
     
     // MARK: - Actions
