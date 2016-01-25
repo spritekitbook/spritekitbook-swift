@@ -14,6 +14,8 @@ class StatusBar:SKNode {
     // MARK: - Private class variables
     private var statusBarBackground = SKSpriteNode()
     private var scoreLabel = SKLabelNode()
+    private var starsCollectedIcon = SKSpriteNode()
+    private var starsCollectedLabel = SKLabelNode()
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -24,13 +26,14 @@ class StatusBar:SKNode {
         super.init()
     }
     
-    convenience init(lives: Int, score: Int) {
+    convenience init(lives: Int, score: Int, stars: Int) {
         self.init()
         
         self.setupStatusBar()
         self.setupStatusBarBackground()
         self.setupStatusBarScore(score: score)
         self.updateLives(lives: lives)
+        self.setupStatusBarStarsCollected(collected: stars)
     }
     
     // MARK: - Setup
@@ -71,9 +74,36 @@ class StatusBar:SKNode {
         self.statusBarBackground.addChild(self.scoreLabel)
     }
     
+    
+    private func setupStatusBarStarsCollected(collected collected: Int) {
+        // Collected Stars Icon
+        self.starsCollectedIcon = SKSpriteNode(texture: GameTextures.sharedInstance.textureWithName(name: SpriteName.StarIcon))
+        
+        let starOffsetX = self.statusBarBackground.size.width / 2 - self.starsCollectedIcon.size.width * 2
+        let starOffsetY = self.statusBarBackground.size.height / 2
+        
+        self.starsCollectedIcon.position = CGPoint(x: starOffsetX, y: starOffsetY)
+        
+        // Collected Stars Label
+        self.starsCollectedLabel = GameFonts.sharedInstance.createLabel(string: String(collected), labelType: GameFonts.LabelType.StatusBar)
+        
+        let labelOffsetX = self.statusBarBackground.size.width / 2
+        let labelOffsetY = self.statusBarBackground.size.height / 2
+        
+        self.starsCollectedLabel.position = CGPoint(x: labelOffsetX, y: labelOffsetY)
+        
+        self.statusBarBackground.addChild(self.starsCollectedIcon)
+        self.statusBarBackground.addChild(self.starsCollectedLabel)
+    }
+    
+    
     // MARK: - Public functions
     func updateScore(score score: Int) {
         self.scoreLabel.text = String(score)
+    }
+    
+    func updateStarsCollected(collected collected: Int) {
+        self.starsCollectedLabel.text = String(collected)
     }
     
     func updateLives(lives lives: Int) {

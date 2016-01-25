@@ -83,7 +83,7 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
         self.addChild(self.interfaceNode)
         
         // Add the statusBar to the interface node
-        self.statusBar = StatusBar(lives: self.player.lives, score: self.player.score)
+        self.statusBar = StatusBar(lives: self.player.lives, score: self.player.score, stars: self.player.starsCollected)
         self.interfaceNode.addChild(self.statusBar)
     }
     
@@ -169,6 +169,8 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
                 self.player.pickedUpStar()
                 // Update the player's score on the status bar
                 self.statusBar.updateScore(score: self.player.score)
+                // Update the player's star count on the status bar
+                self.statusBar.updateStarsCollected(collected: self.player.starsCollected)
                 
                 if let star = other.node as? Star {
                     star.pickedUpStar()
