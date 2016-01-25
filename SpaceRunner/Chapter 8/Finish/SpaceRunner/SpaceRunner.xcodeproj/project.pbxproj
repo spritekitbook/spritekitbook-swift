@@ -44,6 +44,8 @@
 		3FF15A421C55233500D2E9FF /* GameFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF15A411C55233500D2E9FF /* GameFonts.swift */; };
 		3FF15A451C55325E00D2E9FF /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF15A441C55325E00D2E9FF /* StatusBar.swift */; };
 		3FF15A471C554C8300D2E9FF /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF15A461C554C8300D2E9FF /* GameSettings.swift */; };
+		3FF920261C56AAD2008942E2 /* GameOverTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF920251C56AAD2008942E2 /* GameOverTitle.swift */; };
+		3FF920281C56AB79008942E2 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF920271C56AB79008942E2 /* ScoreBoard.swift */; };
 		3FFD27921C503224009798E6 /* GameTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27911C503224009798E6 /* GameTextures.swift */; };
 		3FFD27941C503F01009798E6 /* GameParticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27931C503F01009798E6 /* GameParticles.swift */; };
 		3FFD27961C50417B009798E6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD27951C50417B009798E6 /* Colors.swift */; };
@@ -123,6 +125,8 @@
 		3FF15A411C55233500D2E9FF /* GameFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFonts.swift; sourceTree = "<group>"; };
 		3FF15A441C55325E00D2E9FF /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		3FF15A461C554C8300D2E9FF /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		3FF920251C56AAD2008942E2 /* GameOverTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverTitle.swift; sourceTree = "<group>"; };
+		3FF920271C56AB79008942E2 /* ScoreBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
 		3FFD27911C503224009798E6 /* GameTextures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTextures.swift; sourceTree = "<group>"; };
 		3FFD27931C503F01009798E6 /* GameParticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameParticles.swift; sourceTree = "<group>"; };
 		3FFD27951C50417B009798E6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -411,6 +415,8 @@
 			children = (
 				3FFD280D1C507DAF009798E6 /* GameTitle.swift */,
 				3FFD280F1C507E93009798E6 /* GameTitleShip.swift */,
+				3FF920251C56AAD2008942E2 /* GameOverTitle.swift */,
+				3FF920271C56AB79008942E2 /* ScoreBoard.swift */,
 			);
 			name = "Interface Nodes";
 			sourceTree = "<group>";
@@ -578,6 +584,7 @@
 				3F2040A51C513A920055B692 /* Player.swift in Sources */,
 				3F70839C1C4F222F0051927B /* Constants.swift in Sources */,
 				3FFD27921C503224009798E6 /* GameTextures.swift in Sources */,
+				3FF920261C56AAD2008942E2 /* GameOverTitle.swift in Sources */,
 				3FF15A421C55233500D2E9FF /* GameFonts.swift in Sources */,
 				3F7083861C4F1C000051927B /* CGFloat+Extensions.swift in Sources */,
 				3FFD279B1C505324009798E6 /* Background.swift in Sources */,
@@ -591,6 +598,7 @@
 				3FDF90B01C53D19C003EABA1 /* MeteorController.swift in Sources */,
 				3F7083891C4F1C000051927B /* Int+Extensions.swift in Sources */,
 				3F7083871C4F1C000051927B /* CGPoint+Extensions.swift in Sources */,
+				3FF920281C56AB79008942E2 /* ScoreBoard.swift in Sources */,
 				3FFD280E1C507DAF009798E6 /* GameTitle.swift in Sources */,
 				3F70838B1C4F1C000051927B /* SKAction+SpecialEffects.swift in Sources */,
 				3FFD27981C504662009798E6 /* Math.swift in Sources */,
