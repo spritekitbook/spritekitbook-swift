@@ -34,12 +34,4 @@ class GameTextures {
     func spriteWithName(name name: String) -> SKSpriteNode {
         return SKSpriteNode(imageNamed: name)
     }
-    
-    func testWithName(name: String) -> SKSpriteNode {
-        return SKSpriteNode(imageNamed: name)
-    }
-    
-    func testWithName2(name name: String) -> SKSpriteNode {
-        return SKSpriteNode(imageNamed: name)
-    }
 }
