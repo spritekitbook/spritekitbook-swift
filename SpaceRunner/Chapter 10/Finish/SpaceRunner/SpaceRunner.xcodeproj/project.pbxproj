@@ -11,6 +11,7 @@
 		3F2040A51C513A920055B692 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2040A41C513A920055B692 /* Player.swift */; };
 		3F263E7F1C55A2BB00F54B49 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F263E7E1C55A2BB00F54B49 /* Star.swift */; };
 		3F263E811C55A4A900F54B49 /* StarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F263E801C55A4A900F54B49 /* StarController.swift */; };
+		3F5EF6071C583D2300E469A5 /* PauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EF6061C583D2300E469A5 /* PauseButton.swift */; };
 		3F7083391C4F14130051927B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7083371C4F14130051927B /* Main.storyboard */; };
 		3F70833B1C4F14130051927B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F70833A1C4F14130051927B /* Assets.xcassets */; };
 		3F7083491C4F14130051927B /* SpaceRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7083481C4F14130051927B /* SpaceRunnerTests.swift */; };
@@ -87,6 +88,7 @@
 		3F2040A41C513A920055B692 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3F263E7E1C55A2BB00F54B49 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		3F263E801C55A4A900F54B49 /* StarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarController.swift; sourceTree = "<group>"; };
+		3F5EF6061C583D2300E469A5 /* PauseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseButton.swift; sourceTree = "<group>"; };
 		3F70832C1C4F14130051927B /* SpaceRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7083381C4F14130051927B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F70833A1C4F14130051927B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				3FFD279D1C50600C009798E6 /* PlayButton.swift */,
 				3FFD279F1C5064A9009798E6 /* StartButton.swift */,
 				3FFD27A11C506615009798E6 /* RetryButton.swift */,
+				3F5EF6061C583D2300E469A5 /* PauseButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				3FFD27981C504662009798E6 /* Math.swift in Sources */,
 				3F7083A01C4F2A800051927B /* MenuScene.swift in Sources */,
 				3F7083911C4F1C000051927B /* Vector3.swift in Sources */,
+				3F5EF6071C583D2300E469A5 /* PauseButton.swift in Sources */,
 				3F7083651C4F1B5B0051927B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

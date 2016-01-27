@@ -44,6 +44,9 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     }
     
     override func didMoveToView(view: SKView) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "pauseGame", name: "PauseGame", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "resumeGame", name: "ResumeGame", object: nil)
+        
         self.setupGameScene()
     }
     
@@ -193,14 +196,23 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
                 self.switchToRunning()
             }
             
-            return
+            if self.statusBar.pauseButton.containsPoint(touchLocation) {
+                self.pauseButtonPressed()
+            }
+            
             
         case GameState.Running:
-            self.player.updateTargetLocation(newLocation: touchLocation)
+            if self.statusBar.pauseButton.containsPoint(touchLocation) {
+                self.pauseButtonPressed()
+            } else {
+                self.player.updateTargetLocation(newLocation: touchLocation)
+            }
         
             
         case GameState.Paused:
-            return
+            if self.statusBar.pauseButton.containsPoint(touchLocation) {
+                self.pauseButtonPressed()
+            }
             
         case GameState.GameOver:
             return
@@ -234,7 +246,7 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
         self.state = GameState.Paused
     }
     
-    private func switchToResume() {
+    func switchToResume() {
         self.state = GameState.Running
     }
     
@@ -275,5 +287,40 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     private func updateDistanceTick() {
         self.player.updatePlayerScore(score: 1)
         self.statusBar.updateScore(score: self.player.score)
+    }
+    
+    // MARK: - NSNotification functions
+    func pauseGame() {
+        self.switchToPaused()
+    }
+    
+    func resumeGame() {
+        // Run a timer that resumes the game after 1 second
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("switchToResume"), userInfo: nil, repeats: false)
+    }
+    
+    // MARK: - Pause Button Actions
+    private func pauseButtonPressed() {
+        self.statusBar.pauseButton.tapped()
+        
+        if self.statusBar.pauseButton.getPauseState() {
+            // Pause the gameNode
+            self.gameNode.paused = true
+            
+            // Set the state to Paused
+            self.switchToPaused()
+            
+            // Pause the background music
+            GameAudio.sharedInstance.pauseBackgroundMusic()
+        } else {
+            // Resume the gameNode
+            self.gameNode.paused = false
+            
+            // Switch state to Running without doing the other init in switchToRunning()
+            self.switchToResume()
+            
+            // Resume the background music
+            GameAudio.sharedInstance.resumeBackgroundMusic()
+        }
     }
 }

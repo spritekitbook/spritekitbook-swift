@@ -17,6 +17,9 @@ class StatusBar:SKNode {
     private var starsCollectedIcon = SKSpriteNode()
     private var starsCollectedLabel = SKLabelNode()
     
+    // MARK: - Public class constants
+    internal let pauseButton = PauseButton()
+    
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,6 +37,7 @@ class StatusBar:SKNode {
         self.setupStatusBarScore(score: score)
         self.updateLives(lives: lives)
         self.setupStatusBarStarsCollected(collected: stars)
+        self.setupPauseButton()
     }
     
     // MARK: - Setup
@@ -94,6 +98,11 @@ class StatusBar:SKNode {
         
         self.statusBarBackground.addChild(self.starsCollectedIcon)
         self.statusBarBackground.addChild(self.starsCollectedLabel)
+    }
+    
+    
+    private func setupPauseButton() {
+        self.addChild(self.pauseButton)
     }
     
     
