@@ -10,6 +10,9 @@ import SpriteKit
 
 class GameTitle:SKSpriteNode {
     
+    // MARK: - Private class variables
+    private var animation = SKAction()
+    
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -24,10 +27,27 @@ class GameTitle:SKSpriteNode {
         self.init(texture: texture, color: SKColor.whiteColor(), size: texture.size())
         
         self.setupGameTitle()
+        
+        self.setupAnimation()
+        
+        self.animateIn()
     }
     
     // MARK: - Setup
     private func setupGameTitle() {
         self.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height * 0.7)
+    }
+    
+    private func setupAnimation() {
+        let moveIn = SKAction.moveTo(CGPoint(x: kViewSize.width / 2, y: kViewSize.height * 0.7), duration: 0.5)
+        let scaleUp = SKAction.scaleTo(1.1, duration: 0.125)
+        let scaleDown = SKAction.scaleTo(1.0, duration: 0.125)
+        
+        self.animation = SKAction.sequence([moveIn, scaleUp, scaleDown])
+    }
+    
+    // MARK: - Animations
+    private func animateIn() {
+        self.runAction(self.animation)
     }
 }
