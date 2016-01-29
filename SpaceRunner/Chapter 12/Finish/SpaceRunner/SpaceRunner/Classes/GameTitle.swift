@@ -35,7 +35,7 @@ class GameTitle:SKSpriteNode {
     
     // MARK: - Setup
     private func setupGameTitle() {
-        self.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height * 0.7)
+        self.position = CGPoint(x: kViewSize.width / 2, y: kViewSize.height + kViewSize.height / 2)
     }
     
     private func setupAnimation() {
