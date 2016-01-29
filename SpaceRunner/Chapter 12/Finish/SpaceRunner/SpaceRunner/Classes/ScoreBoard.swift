@@ -16,6 +16,7 @@ class ScoreBoard:SKNode {
     
     // MARK: - Private class variables
     private var background = SKShapeNode()
+    private var animation = SKAction()
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -31,6 +32,10 @@ class ScoreBoard:SKNode {
         
         self.setupScoreBackground()
         self.setupScores(score, bestScore: bestScore, streak: streak, bestStreak: bestStreak, stars: stars, bestStars: bestStars)
+        
+        self.setupAnimation()
+        
+        self.animateIn()
     }
     
     // MARK: - Setup
@@ -45,7 +50,7 @@ class ScoreBoard:SKNode {
         self.background.strokeColor = Colors.colorFromRGB(rgbvalue: Colors.Border)
         self.background.lineWidth = 1.5
         
-        self.background.position = CGPoint(x: kViewSize.width * 0.05, y: kViewSize.height * 0.35)
+        self.background.position = CGPoint(x: -kViewSize.width * 2, y: kViewSize.height * 0.35)
         
         self.addChild(self.background)
     }
@@ -115,5 +120,18 @@ class ScoreBoard:SKNode {
         
         self.background.addChild(bestStreakLabel)
         self.background.addChild(bestStreakValue)
+    }
+    
+    private func setupAnimation() {
+        let moveIn = SKAction.moveTo(CGPoint(x: kViewSize.width * 0.05, y: kViewSize.height * 0.35), duration: 0.5)
+        let scaleUp = SKAction.scaleTo(1.1, duration: 0.125)
+        let scaleDown = SKAction.scaleTo(1.0, duration: 0.125)
+        
+        self.animation = SKAction.sequence([moveIn, scaleUp, scaleDown])
+    }
+    
+    // MARK: - Animation
+    private func animateIn() {
+        self.background.runAction(self.animation)
     }
 }
