@@ -12,5 +12,5 @@ All you need is a Mac and a copy of Xcode downloaded for free from the Mac App S
 </p>
 
 <p align="center">
-  <img src="http://i.imgur.com/ceaoSlG.png" width="50%">
+  <a href="https://itunes.apple.com/us/book/id1080204614"><img src="http://i.imgur.com/ceaoSlG.png" width="50%"></a>
 </p>
