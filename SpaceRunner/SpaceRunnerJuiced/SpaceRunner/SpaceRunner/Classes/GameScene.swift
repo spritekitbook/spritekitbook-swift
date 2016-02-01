@@ -262,6 +262,15 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
         // Run the gameOver function to check scores
         self.player.gameOver()
         
+        // Run the gameOver function on the meteors
+        self.meteorController.gameOver()
+        
+        // Run the gameOver function on the stars
+        self.starController.gameOver()
+        
+        // Run the gameOver function on the background
+        self.background.gameOver()
+        
         // Stop the background
         self.background.stopBackground()
         

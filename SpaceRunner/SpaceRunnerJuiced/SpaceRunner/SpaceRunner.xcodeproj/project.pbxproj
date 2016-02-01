@@ -42,6 +42,8 @@
 		3F7083A21C4F2C4B0051927B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7083A11C4F2C4B0051927B /* GameOverScene.swift */; };
 		3FDF90AE1C53C5E9003EABA1 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF90AD1C53C5E9003EABA1 /* Meteor.swift */; };
 		3FDF90B01C53D19C003EABA1 /* MeteorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF90AF1C53D19C003EABA1 /* MeteorController.swift */; };
+		3FF0C4E31C5C4E5C009CF93C /* Grayscale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0C4E21C5C4E5C009CF93C /* Grayscale.fsh */; };
+		3FF0C4E51C5C5285009CF93C /* GameShaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C4E41C5C5285009CF93C /* GameShaders.swift */; };
 		3FF15A421C55233500D2E9FF /* GameFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF15A411C55233500D2E9FF /* GameFonts.swift */; };
 		3FF15A451C55325E00D2E9FF /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF15A441C55325E00D2E9FF /* StatusBar.swift */; };
 		3FF15A471C554C8300D2E9FF /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF15A461C554C8300D2E9FF /* GameSettings.swift */; };
@@ -125,6 +127,8 @@
 		3F7083A11C4F2C4B0051927B /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		3FDF90AD1C53C5E9003EABA1 /* Meteor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meteor.swift; sourceTree = "<group>"; };
 		3FDF90AF1C53D19C003EABA1 /* MeteorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteorController.swift; sourceTree = "<group>"; };
+		3FF0C4E21C5C4E5C009CF93C /* Grayscale.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Grayscale.fsh; sourceTree = "<group>"; };
+		3FF0C4E41C5C5285009CF93C /* GameShaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameShaders.swift; sourceTree = "<group>"; };
 		3FF15A411C55233500D2E9FF /* GameFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFonts.swift; sourceTree = "<group>"; };
 		3FF15A441C55325E00D2E9FF /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		3FF15A461C554C8300D2E9FF /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 		3F7083611C4F1B5B0051927B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3FF0C4DF1C5C4C8C009CF93C /* Shaders */,
 				3F263E7D1C55A21000F54B49 /* Stars */,
 				3FF15A431C55325400D2E9FF /* StatusBar */,
 				3FDF90AC1C53C5A9003EABA1 /* Meteors */,
@@ -364,6 +369,14 @@
 			name = Meteors;
 			sourceTree = "<group>";
 		};
+		3FF0C4DF1C5C4C8C009CF93C /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0C4E21C5C4E5C009CF93C /* Grayscale.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
 		3FF15A431C55325400D2E9FF /* StatusBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +393,7 @@
 				3FF15A411C55233500D2E9FF /* GameFonts.swift */,
 				3FF15A461C554C8300D2E9FF /* GameSettings.swift */,
 				3FF920291C5808E3008942E2 /* GameAudio.swift */,
+				3FF0C4E41C5C5285009CF93C /* GameShaders.swift */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -541,6 +555,7 @@
 				3F7083941C4F1C000051927B /* Explosion.caf in Resources */,
 				3FFD27BB1C5076E3009798E6 /* Default-568h@2x.png in Resources */,
 				3F7083971C4F1C000051927B /* ShieldUp.caf in Resources */,
+				3FF0C4E31C5C4E5C009CF93C /* Grayscale.fsh in Resources */,
 				3FFD27BE1C5076E3009798E6 /* Default@2x~ipad.png in Resources */,
 				3F70833B1C4F14130051927B /* Assets.xcassets in Resources */,
 				3F7083931C4F1C000051927B /* ButtonTap.caf in Resources */,
@@ -587,6 +602,7 @@
 				3F7083881C4F1C000051927B /* CGVector+Extensions.swift in Sources */,
 				3FF15A471C554C8300D2E9FF /* GameSettings.swift in Sources */,
 				3F7083A21C4F2C4B0051927B /* GameOverScene.swift in Sources */,
+				3FF0C4E51C5C5285009CF93C /* GameShaders.swift in Sources */,
 				3F2040A51C513A920055B692 /* Player.swift in Sources */,
 				3F70839C1C4F222F0051927B /* Constants.swift in Sources */,
 				3FFD27921C503224009798E6 /* GameTextures.swift in Sources */,

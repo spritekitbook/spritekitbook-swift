@@ -19,14 +19,17 @@ class GameParticles {
     // MARK: - Public class enum
     internal enum Particles:Int {
         case Magic
+        case Engine
     }
     
     // MARK: - Private class properties
     private var magicParticles = SKEmitterNode()
+    private var engineParticles = SKEmitterNode()
     
     // MARK: - Init
     init() {
         self.setupMagicParticles()
+        self.setupEngineParticles()
     }
     
     // MARK: - Setup
@@ -64,11 +67,44 @@ class GameParticles {
         self.magicParticles.particleTexture = GameTextures.sharedInstance.textureWithName(name: SpriteName.Magic)
     }
     
+    private func setupEngineParticles() {
+        
+        // Birthrate and Lifetime
+        self.engineParticles.particleBirthRate = 25.0
+        self.engineParticles.particleLifetime = 0.5
+        
+        // Position Range
+        self.engineParticles.particlePositionRange = CGVectorMake(0, 0)
+        
+        // Angle
+        self.engineParticles.emissionAngle = DegreesToRadians(degrees: 90)
+        //self.engineParticles.emissionAngleRange = DegreesToRadians(degrees: 5.0)
+        
+        // Speed
+        self.engineParticles.particleSpeed = -80.0
+        
+        // Scale
+        self.engineParticles.particleScale = kDeviceTablet ? 0.75 : 0.25
+        
+        // Color Blending
+        self.engineParticles.particleColorBlendFactor = 1.0
+        
+        // Color
+        self.engineParticles.particleColor = Colors.colorFromRGB(rgbvalue: Colors.Engine)
+        
+        // Texture
+        self.engineParticles.particleTexture = GameTextures.sharedInstance.textureWithName(name: SpriteName.Magic)
+        
+    }
+    
     // MARK: - Public functions
     func createParticle(particles particles: Particles) -> SKEmitterNode {
         switch particles {
             case Particles.Magic:
                 return self.magicParticles.copy() as! SKEmitterNode
+            
+            case Particles.Engine:
+                return self.engineParticles.copy() as! SKEmitterNode
             
         }
     }

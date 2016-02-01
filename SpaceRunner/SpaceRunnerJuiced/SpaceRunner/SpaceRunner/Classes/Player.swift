@@ -41,6 +41,7 @@ class Player:SKSpriteNode {
         
         self.setupPlayer()
         self.setupPlayerPhysics()
+        self.setupEngineParticles()
     }
     
     // MARK: - Setup
@@ -56,6 +57,12 @@ class Player:SKSpriteNode {
         self.physicsBody?.categoryBitMask = Contact.Player
         self.physicsBody?.collisionBitMask = Contact.Scene
         self.physicsBody?.contactTestBitMask = Contact.Meteor | Contact.Star
+    }
+    
+    private func setupEngineParticles() {
+        let engineParticles = GameParticles.sharedInstance.createParticle(particles: GameParticles.Particles.Engine)
+        engineParticles.zPosition = self.zPosition - 1
+        self.addChild(engineParticles)
     }
     
     // MARK: - Update
@@ -82,6 +89,7 @@ class Player:SKSpriteNode {
         
         self.position = CGPoint(x: newX, y: newY)
     }
+
     
     // MARK: - Enable/Disable Movement
     func enableMovement() {
@@ -207,6 +215,10 @@ class Player:SKSpriteNode {
     
     // MARK: - Check and save best score
     func gameOver() {
+        // Apply grayscale shader
+        GameShaders.sharedInstance.shadeGray(node: self)
+        
+        
         if self.score > GameSettings.sharedInstance.getBestScore() {
             GameSettings.sharedInstance.saveBestScore(score: self.score)
         }

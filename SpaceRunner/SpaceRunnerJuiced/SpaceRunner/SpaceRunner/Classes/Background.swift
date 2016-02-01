@@ -59,4 +59,9 @@ class Background:SKNode {
         self.backgroundParticlesSmall.particleSpeed = self.backgroundStopSpeed * 1.5
         self.backgroundParticlesSmall.particleSpeedRange = self.backgroundParticlesSmall.particleSpeed / 4
     }
+    
+    func gameOver() {
+        self.backgroundParticles.particleColor = SKColor.grayColor()
+        self.backgroundParticlesSmall.particleColor = SKColor.grayColor()
+    }
 }

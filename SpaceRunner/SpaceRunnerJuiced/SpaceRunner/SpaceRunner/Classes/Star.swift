@@ -28,6 +28,7 @@ class Star:SKSpriteNode {
         
         self.setupStar()
         self.setupStarPhysics()
+        //self.setupStarAnimation()
     }
     
     // MARK: - Setup
@@ -39,6 +40,14 @@ class Star:SKSpriteNode {
         self.physicsBody?.categoryBitMask = Contact.Star
         self.physicsBody?.collisionBitMask = 0x0
         self.physicsBody?.contactTestBitMask = 0x0
+    }
+    
+    private func setupStarAnimation() {
+        let scaleUp = SKAction.scaleTo(1.1, duration: 0.15)
+        let scaleNormal = SKAction.scaleTo(1.0, duration: 0.15)
+        let scaleSequence = SKAction.sequence([scaleUp, scaleNormal])
+        
+        self.runAction(SKAction.repeatActionForever(scaleSequence))
     }
     
     // MARK: - Update
@@ -70,6 +79,8 @@ class Star:SKSpriteNode {
     }
     
     func gameOver() {
+        // Apply grayscale shader
+        GameShaders.sharedInstance.shadeGray(node: self)
     }
 }
 

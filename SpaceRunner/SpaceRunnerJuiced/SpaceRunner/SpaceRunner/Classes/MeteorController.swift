@@ -99,7 +99,7 @@ class MeteorController:SKNode {
         self.movingMeteors = false
     }
     
-    private func gameOver() {
+    func gameOver() {
         for node in self.children {
             if let meteor = node as? Meteor {
                 meteor.gameOver()

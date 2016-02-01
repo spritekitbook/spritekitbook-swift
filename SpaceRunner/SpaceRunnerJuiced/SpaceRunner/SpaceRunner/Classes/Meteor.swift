@@ -61,7 +61,6 @@ class Meteor:SKSpriteNode {
     
     // MARK: - Setup
     private func setupMeteor() {
-        
     }
     
     private func setupMeteorPhysics() {
@@ -98,5 +97,7 @@ class Meteor:SKSpriteNode {
     }
     
     func gameOver() {
+        // Apply grayscale shader
+        GameShaders.sharedInstance.shadeGray(node: self)
     }
 }
