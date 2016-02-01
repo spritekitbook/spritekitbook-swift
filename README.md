@@ -4,7 +4,7 @@ Learn Apple's game engine called SpriteKit together with their brand new program
 
 Together we'll build an Endless Runner space themed game where the player must avoid meteors and pick up stars for bonus points. Fast paced games anyone can pick up an play are a great place to start your journey as a game developer. 
 
-All you need is a Mac and a copy of Xcode downloaded for free from the Mac App Store. I have provided the rest. Let's get started.
+All you need is a Mac and a copy of <a href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">Xcode</a> downloaded for free from the Mac App Store. I have provided the rest. Let's get started.
 
 <p align="center">
  <a href="https://geo.itunes.apple.com/us/book/epic-spritekit-tutorial-swift/id1080204614?mt=11" target="_blank"><img align="center" src="http://linkmaker.itunes.apple.com/images/badges/en-us/badge_ibooks-lrg.svg"/></a>
