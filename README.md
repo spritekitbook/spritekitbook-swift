@@ -8,7 +8,7 @@ All you need is a Mac and a copy of Xcode downloaded for free from the Mac App S
 
 <p>
  <a href="https://geo.itunes.apple.com/us/book/epic-spritekit-tutorial-swift/id1080204614?mt=11" target="_blank"><img src="http://linkmaker.itunes.apple.com/images/badges/en-us/badge_ibooks-lrg.svg"/></a>
- <a href="http://www.amazon.com/gp/product/B01BB2U0PA?*Version*=1&*entries*=0" target="_blank""><img src="http://i.imgur.com/hXIeBLd.jpg?1" width="10%"/></a>
+ <a href="http://www.amazon.com/gp/product/B01BB2U0PA?*Version*=1&*entries*=0" target="_blank""><img src="http://i.imgur.com/hXIeBLd.jpg?1" width="15%"/></a>
 </p>
 
 <p align="center">
