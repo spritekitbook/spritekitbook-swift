@@ -32,6 +32,7 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     private var lastUpdateTime:NSTimeInterval = 0.0
     private var frameCount:NSTimeInterval = 0.0
     private var statusBar = StatusBar()
+    private var previousState = GameState.Tutorial
 
     
     // MARK: - Init
@@ -247,11 +248,12 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     }
     
     private func switchToPaused() {
+        self.previousState = self.state
         self.state = GameState.Paused
     }
     
     func switchToResume() {
-        self.state = GameState.Running
+        self.state = self.previousState
     }
     
     private func switchToGameOver() {
@@ -300,7 +302,7 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     
     func resumeGame() {
         // Run a timer that resumes the game after 1 second
-        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(GameScene.switchToResume), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(switchToResume), userInfo: nil, repeats: false)
     }
     
     // MARK: - Pause Button Actions
