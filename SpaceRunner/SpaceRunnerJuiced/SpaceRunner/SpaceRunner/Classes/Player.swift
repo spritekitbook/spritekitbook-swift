@@ -107,7 +107,7 @@ class Player:SKSpriteNode {
     
     // MARK: - Update Lives
     private func updatePlayerLives() {
-        self.lives--
+        self.lives -= 1
     }
     
     // MARK: - Actions
@@ -152,8 +152,8 @@ class Player:SKSpriteNode {
     }
     
     func pickedUpStar() {
-        self.starsCollected++
-        self.streakCount++
+        self.starsCollected += 1
+        self.streakCount += 1
         
         self.checkStreak(streak: self.streakCount)
         

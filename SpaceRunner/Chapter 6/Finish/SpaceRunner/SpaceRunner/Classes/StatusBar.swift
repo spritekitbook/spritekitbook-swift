@@ -89,7 +89,7 @@ class StatusBar:SKNode {
         let offsetY = self.statusBarBackground.size.height / 2
         
         // Redraw the sprites
-        for var i = 0; i < lives; i++ {
+        for i in 0..<lives {
             let livesSprite = GameTextures.sharedInstance.spriteWithName(name: SpriteName.PlayerLives)
             
             offsetX = livesSprite.size.width + livesSprite.size.width * 1.5 * CGFloat(i)

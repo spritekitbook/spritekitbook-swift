@@ -44,8 +44,10 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     }
     
     override func didMoveToView(view: SKView) {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "pauseGame", name: "PauseGame", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "resumeGame", name: "ResumeGame", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameScene.pauseGame), name: "PauseGame", object: nil)
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameScene.resumeGame), name: "ResumeGame", object: nil)
         
         self.setupGameScene()
     }
@@ -296,7 +298,7 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     
     func resumeGame() {
         // Run a timer that resumes the game after 1 second
-        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("switchToResume"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(GameScene.switchToResume), userInfo: nil, repeats: false)
     }
     
     // MARK: - Pause Button Actions

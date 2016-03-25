@@ -497,6 +497,7 @@
 				3F70835A1C4F14130051927B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F70835B1C4F14130051927B /* Build configuration list for PBXNativeTarget "SpaceRunnerTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +506,7 @@
 				3F70835D1C4F14130051927B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F70835E1C4F14130051927B /* Build configuration list for PBXNativeTarget "SpaceRunnerUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +515,7 @@
 				3F7083601C4F14130051927B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

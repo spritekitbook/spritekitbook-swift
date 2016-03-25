@@ -96,7 +96,7 @@ class Player:SKSpriteNode {
     
     // MARK: - Update Lives
     private func updatePlayerLives() {
-        self.lives--
+        self.lives -= 1
     }
     
     // MARK: - Actions

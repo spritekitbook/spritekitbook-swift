@@ -69,7 +69,7 @@ class MeteorController:SKNode {
             
             let randomMeteorCount = kDeviceTablet ? RandomIntegerBetween(min: 6, max: 10) : RandomIntegerBetween(min: 10, max: 14)
             
-            for var i = 0; i <= randomMeteorCount; i++ {
+            for _ in 0...randomMeteorCount {
                 let randomMeteorIndex = RandomIntegerBetween(min: 0, max: 3)
                 
                 let offsetX:CGFloat = randomMeteorIndex % 2 == 0 ? -72 : 72
