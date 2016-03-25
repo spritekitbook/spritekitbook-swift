@@ -27,7 +27,6 @@ git reset —-hard origin/master
 <p align="center">
  <a href="https://geo.itunes.apple.com/us/book/epic-spritekit-tutorial-swift/id1080204614?mt=11" target="_blank"><img align="center" src="http://linkmaker.itunes.apple.com/images/badges/en-us/badge_ibooks-lrg.svg"/></a>
  <a href="http://www.amazon.com/gp/product/B01BB2U0PA?*Version*=1&*entries*=0" target="_blank""><img align="center" src="http://i.imgur.com/hXIeBLd.jpg?1" width="12.5%"/></a>
- <a href="http://www.barnesandnoble.com/w/epic-sprite-kit-tutorial-with-swift-jeremy-novak/1123344627?ean=2940158023408" target="_blank"><img align="center" src="http://img1.imagesbn.com/pImages/nook/tablet/mediakit/nookcolor/01_nooklogo_thumb.png" width="9%"/></a>
 </p>
 
 <p align="center">
