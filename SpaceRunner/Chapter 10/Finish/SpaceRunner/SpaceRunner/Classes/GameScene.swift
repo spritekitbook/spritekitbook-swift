@@ -144,7 +144,7 @@ class GameScene:SKScene, SKPhysicsContactDelegate {
     
     // MARK: - Contact
     func didBeginContact(contact: SKPhysicsContact) {
-        if self.state == GameState.Tutorial || self.state == GameState.Paused || self.state == GameState.GameOver {
+        if self.state != GameState.Running {
             return
         } else {
             // Which body is not the player?
