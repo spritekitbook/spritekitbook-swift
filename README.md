@@ -1,4 +1,4 @@
-# Epic SpriteKit Tutorial with Swift
+# Epic SpriteKit Tutorial with Swift 3 - Volume 1
 
 Learn Apple's game engine called SpriteKit together with their brand new programming language Swift. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
 
@@ -12,14 +12,14 @@ All you need is a Mac and a copy of <a href="https://itunes.apple.com/us/app/xco
 mkdir ~/Documents/Source
 ```
 
-2 - Clone the spritekitbook-swift project from GitHub.
+2 - Clone the spritekit-tutorial-volume1 project from GitHub.
 ```bash
-cd ~/Documents/Source && git clone https://github.com/spritekitbook/spritekitbook-swift.git
+cd ~/Documents/Source && git clone https://github.com/spritekitbook/spritekit-tutorial-volume1.git
 ```
 
 3 - When you want to sync with the latest version on GitHub.
 ```bash
-cd ~/Documents/Source/spritekitbook-swift
+cd ~/Documents/Source/spritekit-tutorial-volume1
 git fetch origin
 git reset —-hard origin/master
 ```
