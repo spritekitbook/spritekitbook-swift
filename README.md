@@ -1,8 +1,8 @@
-# Epic SpriteKit Tutorial with Swift 3 - Volume 1
+# Epic SpriteKit Tutorial with Swift 3
 
-Learn Apple's game engine called SpriteKit together with their brand new programming language Swift. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
+Learn Apple's game engine called SpriteKit together with Swift 3.0. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
 
-Together we'll build an Endless Runner space themed game where the player must avoid meteors and pick up stars for bonus points. Fast paced games anyone can pick up and play are a great place to start your journey as a game developer. 
+Together we'll build an Endless Runner space themed game where the player must avoid meteors and pick up stars for bonus points. Games are a great way to start your journey as a Software Developer and learn the Apple Developer environment. 
 
 All you need is a Mac and a copy of <a href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">Xcode</a> downloaded for free from the Mac App Store. I have provided the rest. Let's get started.
 
@@ -30,5 +30,5 @@ git reset —-hard origin/master
 </p>
 
 <p align="center">
-  <a href="https://itunes.apple.com/us/book/id1080204614"><img src="http://i.imgur.com/ceaoSlG.png" width="50%"></a>
+  <a href="https://itunes.apple.com/us/book/id1080204614"><img src="http://imgur.com/4VUMDeF.jpg" width="50%"></a>
 </p>
