@@ -1,4 +1,1 @@
-## Changelog for spritekitbook-swift
-
-### 03/25/2016
-- Updated project to use Swift 3.0 syntax.
+## Changelog for epic-spritekit-vol1
