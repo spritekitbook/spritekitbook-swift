@@ -1,6 +1,6 @@
 # Epic SpriteKit Tutorial with Swift 3
 
-## Please note that a new version of the book is being uploaded to the iTunes Bookstore and Amazon. As of 14:00 UTC on 09/16/2016 the old version of the book is still for sale. The new version will update within the next 24 hours.
+## 14:00 UTC on 09/20/2016: Please note that a new version of the book is being uploaded to the iTunes Bookstore and Amazon.
 
 Learn Apple's game engine called SpriteKit together with Swift 3.0. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
 
