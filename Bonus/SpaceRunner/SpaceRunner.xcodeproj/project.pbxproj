@@ -11,6 +11,7 @@
 		3F0CA72F1D7F59780008DDE7 /* MeteorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0CA72E1D7F59780008DDE7 /* MeteorController.swift */; };
 		3F1E9FCF1D67BF26004FC047 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E9FCE1D67BF26004FC047 /* MenuScene.swift */; };
 		3F1E9FD11D67C8EF004FC047 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E9FD01D67C8EF004FC047 /* GameOverScene.swift */; };
+		3F2B23641D93489D0084A845 /* SKNode+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B23631D93489D0084A845 /* SKNode+Extras.swift */; };
 		3F3776621D67B0A9003455F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3776611D67B0A9003455F9 /* Constants.swift */; };
 		3F4C41B81D81F31A001BB278 /* GameFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C41B71D81F31A001BB278 /* GameFonts.swift */; };
 		3F4C41BB1D81F5A9001BB278 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C41BA1D81F5A9001BB278 /* StatusBar.swift */; };
@@ -66,6 +67,7 @@
 		3F0CA72E1D7F59780008DDE7 /* MeteorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteorController.swift; sourceTree = "<group>"; };
 		3F1E9FCE1D67BF26004FC047 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		3F1E9FD01D67C8EF004FC047 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		3F2B23631D93489D0084A845 /* SKNode+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extras.swift"; sourceTree = "<group>"; };
 		3F3776611D67B0A9003455F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F4C41B71D81F31A001BB278 /* GameFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFonts.swift; sourceTree = "<group>"; };
 		3F4C41BA1D81F5A9001BB278 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE378E51D907B5A005FFB92 /* Camera.swift */,
+				3F2B23631D93489D0084A845 /* SKNode+Extras.swift */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				3FA905A91D80A43E002DED07 /* StartButton.swift in Sources */,
 				3FE378E21D9078B0005FFB92 /* SilverStar.swift in Sources */,
 				3FCD68801D6627520012F41C /* AppDelegate.swift in Sources */,
+				3F2B23641D93489D0084A845 /* SKNode+Extras.swift in Sources */,
 				3F1E9FD11D67C8EF004FC047 /* GameOverScene.swift in Sources */,
 				3F4C41BD1D84855C001BB278 /* PauseButton.swift in Sources */,
 				3FBFE08D1D70D5C700BE2EFE /* GameLogo.swift in Sources */,

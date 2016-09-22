@@ -134,17 +134,19 @@ class StatusBar: SKNode {
         var offsetX = CGFloat()
         let offsetY = barBackground.size.height / 2
         
-        // Redraw the sprites
-        for i in 0..<lives  {
-            let livesSprite = GameTextures.sharedInstance.sprite(name: SpriteName.playerLives)
-            
-            offsetX = livesSprite.size.width + livesSprite.size.width * 1.5 * CGFloat(i)
-            
-            livesSprite.position = CGPoint(x: offsetX, y: offsetY)
-            
-            livesSprite.name = SpriteName.playerLives
-            
-            barBackground.addChild(livesSprite)
+        if lives > 0 {
+            // Redraw the sprites
+            for i in 0..<lives  {
+                let livesSprite = GameTextures.sharedInstance.sprite(name: SpriteName.playerLives)
+                
+                offsetX = livesSprite.size.width + livesSprite.size.width * 1.5 * CGFloat(i)
+                
+                livesSprite.position = CGPoint(x: offsetX, y: offsetY)
+                
+                livesSprite.name = SpriteName.playerLives
+                
+                barBackground.addChild(livesSprite)
+            }
         }
     }
 

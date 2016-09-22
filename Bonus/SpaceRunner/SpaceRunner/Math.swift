@@ -20,6 +20,13 @@ func Smooth(startPoint: CGFloat, endPoint: CGFloat, percentToMove: CGFloat) -> C
     return (startPoint * (1 - percentToMove)) + endPoint * percentToMove
 }
 
+func SmoothedPoint(startPoint:CGPoint, endPoint: CGPoint, percent:CGFloat) -> CGPoint {
+    let newX = Smooth(startPoint: startPoint.x, endPoint: endPoint.x, percentToMove: percent)
+    let newY = Smooth(startPoint: startPoint.y, endPoint: endPoint.y, percentToMove: percent)
+    
+    return CGPoint(x: newX, y: newY)
+}
+
 func AngleBetweenPoints(targetPosition: CGPoint, currentPosition: CGPoint) -> CGFloat {
     let deltaX = targetPosition.x - currentPosition.x
     let deltaY = targetPosition.y - currentPosition.y

@@ -62,9 +62,6 @@ class Shield: SKSpriteNode {
         if self.position.x < (0 - self.size.width) || self.position.x > (kViewSize.width + self.size.width) {
             self.removeFromParent()
         }
-        
-        // Rotate slowly while moving down the screen
-        self.zRotation = self.zRotation + CGFloat(delta)
     }
     
     // MARK: - Contact

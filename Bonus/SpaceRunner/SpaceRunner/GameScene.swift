@@ -25,6 +25,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private let gameNode = SKNode()
     private let explosion = Explosion()
     private let pickupController = PickupController()
+    private let gameCamera = Camera()
     
     // MARK: - Private class variables
     private var lastUpdateTime:TimeInterval = 0.0
@@ -76,12 +77,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(interfaceNode)
         statusBar = StatusBar(lives: player.getLives(), score: player.getScore(), stars: player.getStars())
         interfaceNode.addChild(statusBar)
+        
+        self.camera = gameCamera
     }
     
     // MARK: - Update
     override func update(_ currentTime: TimeInterval) {
         let delta = currentTime - self.lastUpdateTime
         self.lastUpdateTime = currentTime
+        
+        gameCamera.update()
         
         
         if state != .running {
@@ -239,6 +244,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             [weak self] in
             self?.loadScene()
         })
+        
+        gameCamera.stateGameOver()
     }
     
     // MARK: - Pause and Resume Game
