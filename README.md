@@ -19,14 +19,14 @@ All you need is a Mac and a copy of <a href="https://itunes.apple.com/us/app/xco
 mkdir ~/Documents/Source
 ```
 
-2 - Clone the spritekit-tutorial-volume1 project from GitHub.
+2 - Clone the spritekitbook-swift project from GitHub.
 ```bash
-cd ~/Documents/Source && git clone https://github.com/spritekitbook/spritekit-tutorial-volume1.git
+cd ~/Documents/Source && git clone https://github.com/spritekitbook/spritekitbook-swift.git
 ```
 
 3 - When you want to sync with the latest version on GitHub.
 ```bash
-cd ~/Documents/Source/spritekit-tutorial-volume1
+cd ~/Documents/Source/spritekitbook-swift
 git fetch origin
 git reset —-hard origin/master
 ```
