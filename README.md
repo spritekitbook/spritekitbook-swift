@@ -1,6 +1,11 @@
 # Epic SpriteKit Tutorial with Swift 3
 
-## 16:00 UTC on 09/21/2016: The Amazon version of the book is being updated to Swift 3.0 today.
+### Swift 3 Update
+
+This book has been updated to Xcode 8 and Swift 3.0 as of 09/21/2016. 
+
+
+### Description
 
 Learn Apple's game engine called SpriteKit together with Swift 3.0. Along the way I'll introduce you to some programming concepts that make your code easier to write, read, re-use and will make your game more robust. 
 
