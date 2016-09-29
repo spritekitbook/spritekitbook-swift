@@ -43,7 +43,7 @@
 		3FCD688B1D6627520012F41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD68891D6627520012F41C /* Main.storyboard */; };
 		3FCD688D1D6627520012F41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD688C1D6627520012F41C /* Assets.xcassets */; };
 		3FCD68901D6627520012F41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD688E1D6627520012F41C /* LaunchScreen.storyboard */; };
-		3FE44EA01D8990B000C747A4 /* Explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FE44E9E1D8990B000C747A4 /* Explode.sks */; };
+		3FE44EA01D8990B000C747A4 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FE44E9E1D8990B000C747A4 /* Explosion.sks */; };
 		3FE44EA11D8990B000C747A4 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE44E9F1D8990B000C747A4 /* spark.png */; };
 		3FE44EA41D8991C800C747A4 /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE44EA31D8991C800C747A4 /* Explosion.swift */; };
 		3FE44EA61D89956900C747A4 /* SKAction+Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE44EA51D89956900C747A4 /* SKAction+Effects.swift */; };
@@ -94,7 +94,7 @@
 		3FCD688C1D6627520012F41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCD688F1D6627520012F41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FCD68911D6627520012F41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FE44E9E1D8990B000C747A4 /* Explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explode.sks; sourceTree = "<group>"; };
+		3FE44E9E1D8990B000C747A4 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		3FE44E9F1D8990B000C747A4 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		3FE44EA31D8991C800C747A4 /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
 		3FE44EA51D89956900C747A4 /* SKAction+Effects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Effects.swift"; sourceTree = "<group>"; };
@@ -317,7 +317,7 @@
 		3FE44E9D1D89903500C747A4 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
-				3FE44E9E1D8990B000C747A4 /* Explode.sks */,
+				3FE44E9E1D8990B000C747A4 /* Explosion.sks */,
 				3FE44E9F1D8990B000C747A4 /* spark.png */,
 			);
 			name = Particles;
@@ -410,7 +410,7 @@
 				3FE44EA11D8990B000C747A4 /* spark.png in Resources */,
 				3FBFE0811D70C1F300BE2EFE /* ButtonTap.caf in Resources */,
 				3FBFE0841D70C1F300BE2EFE /* ShieldDown.caf in Resources */,
-				3FE44EA01D8990B000C747A4 /* Explode.sks in Resources */,
+				3FE44EA01D8990B000C747A4 /* Explosion.sks in Resources */,
 				3FCD688B1D6627520012F41C /* Main.storyboard in Resources */,
 				3FCD688D1D6627520012F41C /* Assets.xcassets in Resources */,
 				3FBFE0821D70C1F300BE2EFE /* Explosion.caf in Resources */,
