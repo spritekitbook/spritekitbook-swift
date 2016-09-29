@@ -51,7 +51,7 @@
 		3FE378E21D9078B0005FFB92 /* SilverStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE378E11D9078B0005FFB92 /* SilverStar.swift */; };
 		3FE378E41D9078BA005FFB92 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE378E31D9078BA005FFB92 /* Shield.swift */; };
 		3FE378E61D907B5A005FFB92 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE378E51D907B5A005FFB92 /* Camera.swift */; };
-		3FE44EA01D8990B000C747A4 /* Explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FE44E9E1D8990B000C747A4 /* Explode.sks */; };
+		3FE44EA01D8990B000C747A4 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FE44E9E1D8990B000C747A4 /* Explosion.sks */; };
 		3FE44EA41D8991C800C747A4 /* Explosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE44EA31D8991C800C747A4 /* Explosion.swift */; };
 		3FE44EA61D89956900C747A4 /* SKAction+Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE44EA51D89956900C747A4 /* SKAction+Effects.swift */; };
 		3FE44EAB1D89A62E00C747A4 /* Grayscale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3FE44EAA1D89A62E00C747A4 /* Grayscale.fsh */; };
@@ -109,7 +109,7 @@
 		3FE378E11D9078B0005FFB92 /* SilverStar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilverStar.swift; sourceTree = "<group>"; };
 		3FE378E31D9078BA005FFB92 /* Shield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
 		3FE378E51D907B5A005FFB92 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		3FE44E9E1D8990B000C747A4 /* Explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explode.sks; sourceTree = "<group>"; };
+		3FE44E9E1D8990B000C747A4 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		3FE44EA31D8991C800C747A4 /* Explosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explosion.swift; sourceTree = "<group>"; };
 		3FE44EA51D89956900C747A4 /* SKAction+Effects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Effects.swift"; sourceTree = "<group>"; };
 		3FE44EAA1D89A62E00C747A4 /* Grayscale.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Grayscale.fsh; sourceTree = "<group>"; };
@@ -355,7 +355,7 @@
 				3F86B9C01D908942004D394F /* Shield.sks */,
 				3F86B9C11D908942004D394F /* Star.sks */,
 				3F86B9BD1D9082E2004D394F /* Bonus.sks */,
-				3FE44E9E1D8990B000C747A4 /* Explode.sks */,
+				3FE44E9E1D8990B000C747A4 /* Explosion.sks */,
 			);
 			name = Particles;
 			sourceTree = "<group>";
@@ -448,7 +448,7 @@
 				3FE44EAB1D89A62E00C747A4 /* Grayscale.fsh in Resources */,
 				3FBFE0811D70C1F300BE2EFE /* ButtonTap.caf in Resources */,
 				3FBFE0841D70C1F300BE2EFE /* ShieldDown.caf in Resources */,
-				3FE44EA01D8990B000C747A4 /* Explode.sks in Resources */,
+				3FE44EA01D8990B000C747A4 /* Explosion.sks in Resources */,
 				3FCD688B1D6627520012F41C /* Main.storyboard in Resources */,
 				3FCD688D1D6627520012F41C /* Assets.xcassets in Resources */,
 				3FBFE0821D70C1F300BE2EFE /* Explosion.caf in Resources */,

@@ -11,7 +11,7 @@ import SpriteKit
 class Explosion: SKNode {
     
     // MARK: - Private class constants
-    private let particles = SKEmitterNode(fileNamed: "Explode.sks")
+    private let particles = SKEmitterNode(fileNamed: "Explosion.sks")
     
     // MARK: - Init
     required init?(coder aDecoder: NSCoder) {
