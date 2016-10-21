@@ -22,8 +22,8 @@ class GameTextures {
     
     // MARK: - Init
     init() {
-        self.interfaceSpritesAtlas = SKTextureAtlas(named: gameSprites)
-        self.gameSpritesAtlas = SKTextureAtlas(named: interfaceSprites)
+        self.interfaceSpritesAtlas = SKTextureAtlas(named: interfaceSprites)
+        self.gameSpritesAtlas = SKTextureAtlas(named: gameSprites)
     }
     
     // MARK: - Public convenience methods
